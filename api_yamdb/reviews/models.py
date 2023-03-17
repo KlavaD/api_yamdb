@@ -49,7 +49,7 @@ class Title(models.Model):
         verbose_name='Категория',
     )
     genre = models.ManyToManyField(Genre, through='GenresTitles',
-                                   verbose_name='Жанр', )
+                                   verbose_name='Жанры', )
 
     def __str__(self):
         return self.name[:15]
